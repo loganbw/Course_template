@@ -88,6 +88,7 @@ import WindowPortalHeader from "./WindowPortalHeader.vue";
           return;
         }
         this.titleCount++;
+        this.flip = false;
         store.dispatch("setIndexOfSlide", this.titleCount);
         store.dispatch("setQuestionAnswered", true)
         store.dispatch("setIsQuestionCorrect", 'unAnswered')
@@ -97,6 +98,7 @@ import WindowPortalHeader from "./WindowPortalHeader.vue";
         //gets previous slide for display
         this.titleCount = this.$store.getters.getIndexSlideSelected;
         this.titleCount--;
+        this.flip = false;
         if (this.titleCount < 0) {
           this.titleCount = 0;
         }
