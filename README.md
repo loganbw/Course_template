@@ -3,8 +3,7 @@ use this template to update the legacy GFEBS courses
 - **NOTE: this template may be updated later to a new GUI** 
 --- 
 # Getting Started
-- clone this repository ( if git is still there rm -rf .git to remove it)
-- git init and create a new repo for the new assessment
+- Use This as a template
 - npm i
 - npm run dev to run test enviroment
 # Adding the home page data 
