@@ -12,19 +12,21 @@
     </div>
     <div class="homeParagraph">
       <span>
-        After completing this course, review all the modules and test for the <br/> GFEBS  Financials
-        Process Overview Post Assessment.
+        After completing this course, review all the modules and test for the <br />
+        GFEBS Financials Process Overview Post Assessment.
       </span>
-      <span class="homeNote"> Note: This will launch module content and take you to an external .Mil website. </span>
+      <span class="homeNote">
+        Note: This will launch module content and take you to an external .Mil website.
+      </span>
     </div>
     <div class="homeButtons">
-        <ButtonView />
+      <ButtonView />
     </div>
   </div>
 </template>
 <script>
   import HomeHeader from "../layouts/HomeHeader.vue";
-import ButtonView from "./ButtonView.vue";
+  import ButtonView from "./ButtonView.vue";
   export default {
     components: { HomeHeader, ButtonView },
   };
@@ -60,9 +62,9 @@ import ButtonView from "./ButtonView.vue";
     margin: 1% 10%;
     align-items: center;
   }
-  .homeNote{
-      color:rgb(247	222	154	);
-      font-weight: bold;
+  .homeNote {
+    color: rgb(247 222 154);
+    font-weight: bold;
   }
   span {
     text-align: center;
