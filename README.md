@@ -20,6 +20,7 @@ you can add the title of the button and the link to the module there
 **NOTE: the path should be the same as the link from the homeButtons/index.js file**
 - under the store folder, create a new folder and name it the same as the module
 - create an index.js file for it. (this is the store module for vuex. You can use the exampleStore/index.js as a template)
+- add the title for each slide in the slideNames array and change the total amount of slides
 - navigate to /src/components/store/index.js and import the newly created index file and add it to the modules
 - in the same index file in the mutations: **openCurrentIndex** function add an if check for the new module 
 ```javascript
