@@ -84,3 +84,20 @@ h2{
 .underline {
   text-decoration: underline;
 }
+.FBPA {
+  font-size: 10px;
+}
+.baseTermTitle {
+  color: rgb(176 215 166);
+  font-weight: bold;
+}
+.slotContain {
+  display: flex;
+  flex-direction: column;
+  color: rgb(255 255 255);
+  padding: 1%;
+  width: 55%;
+  position: absolute;
+  margin-top: -17%;
+  background-color: rgb(14 52 61);
+}

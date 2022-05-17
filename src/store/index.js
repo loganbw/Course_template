@@ -6,7 +6,7 @@
 import { createStore } from "vuex";
 //Importing the Home button store modules here
 import HomeButtonModule from "./homeButtons/index.js";
-
+import exampleStoreModule from "./exampleStore/index"
 // Create a new store instance.
 const store = createStore({
   state() {
@@ -32,6 +32,7 @@ const store = createStore({
   //declared home buttons here
   modules: {
     homeButtonGroup: HomeButtonModule,
+    exampleStore : exampleStoreModule
     
   },
   mutations: {
@@ -55,9 +56,9 @@ const store = createStore({
       // on open we set the array back to 0
       state.currentIndexTitles = [];
       //since the button opens a new window we use localstorage to find the current pressed button
-      // if (window.localStorage.getItem("name") == "Introduction to Financials") {
+      // if (window.localStorage.getItem("name") == "example Title") {
         //set the currentindex title to the correct slide
-      //   state.currentIndexTitles.push(state.introductionF.slideNames);
+      //   state.currentIndexTitles.push(state.exampleStore.slideNames);
       //   state.totalNumberOfSlides = state.currentIndexTitles[0].length;
       //   return;
       // }
