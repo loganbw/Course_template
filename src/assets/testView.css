@@ -8,7 +8,7 @@
     height: 100px;
     margin: 5%;
     margin-top: 6%;
-    margin-left: 20%;
+    margin-left: 0%;
     position: relative;
   }
   .window {
@@ -79,49 +79,4 @@
   .contain{
     width:100%;
   }
-
-  /*
-  Custom css
-  */
-
-  .s1Txt{
-      margin:1%
-  }
- 
-  .s2Wrap{
-    flex-direction: column;
-  }
-
   
-  .s2Img{
-    height: auto;
-    width: 90%;
-  }
-
-  .s6Wrap{
-    flex-direction: column;
-  }
-
-  
-  .s6Img{
-    height: auto;
-    width: 90%;
-  }
-  .s9Wrap{
-    flex-direction: column;
-  }
-
-  
-  .s9Img{
-    height: auto;
-    width: 90%;
-    
-  }
-
-  .s9ImgDiv{
-    margin-top: -2%;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 15%;
-
-  }

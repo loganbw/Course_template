@@ -35,6 +35,7 @@ you can add the title of the button and the link to the module there
 Your Module should follow the same structure as the testView.vue folder.
 - Make sure to change the template header to the button title 
 - add html in the slides. Follow this structure if you want:
+(if you dont want to that is fine. We import the styles and you can change them however you want to make it look like the modlue you are copying.)
 ```html
       <h2 class="panelTitle">Welcome to Introduction Financials</h2>
         <div class="wrapper">
@@ -50,10 +51,16 @@ Your Module should follow the same structure as the testView.vue folder.
           </div>
         </div>
 ```
-if you dont want to that is fine. We import the styles and you can change them however you want to make it look like the modlue you are copying
+- create a css file in the assets folder and name it the same as the view
+
+The reasoning why we import the styles is because all of the slides are hard coded. This makes the file super long and hard to follow.
+So to cut down the file length we import the styles.
+
+Some Global Styles:
 - FBPA class brings the text down to 10px
 - bold class makes the text bold
 - underline class makes the text underline 
+
 ---
 - if you get to the section where the module has terms the user needs to click use this inside of the slide that needs it:
 
@@ -130,7 +137,11 @@ When you get to the part of the module that requires the user to answer question
 ```
 
 - the div with the BaseQuestionImage shouldnt be changed.
+```html
+    <BaseQuestion :value="false" :id="'q31'" :labelName="'Centralizing Master Data'" :name="'q3'" />
+```
 - the text above the BaseQuestions, is the actual question
+
 - the value is either true or false. (true being correct and false incorrect)
 - the id is question number and what ever question it is (IE: q for question and 3 because its question 3. the other number is what number the question answer is. So together q31 is question number 3 answer number 1)
 - the label name is the actual answer text
