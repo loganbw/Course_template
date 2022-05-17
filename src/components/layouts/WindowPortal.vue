@@ -123,17 +123,19 @@ import WindowPortalHeader from "./WindowPortalHeader.vue";
           close();
         }
       },
-
+      // this opens the index menu
       openIndexModule() {
         store.dispatch("openCurrentIndex");
         this.$store.getters.getCurrentSelectedHomeButton;
         this.flip = this.$store.getters.getShowSlide;
         this.openIndexTitles();
       },
+      //this gets the index titles from the store of current module
       openIndexTitles() {
         this.titles = this.$store.getters.getIndexTitles;
         this.titleCount = this.$store.getters.getTitleCount;
       },
+      //closes index
       closeIndexModule() {
         store.dispatch("closeCurrentIndex");
         this.flip = this.$store.getters.getShowSlide;

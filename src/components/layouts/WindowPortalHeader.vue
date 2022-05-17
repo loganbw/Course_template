@@ -4,13 +4,9 @@
       <img src="../../../img/shield-01.png" alt="shield.png" />
     </div>
     <div >
-      <span class="text" 
-        > 
-        <br />
-        </span
-      >
+      <span class="text"> </span>
       <br />
-      <span class="note"></span>
+      <span class="note"> </span>
     </div>
     <div> </div>
   </div>
