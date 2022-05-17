@@ -15,13 +15,15 @@ you can add the title of the button and the link to the module there
 (make sure you add the link from the store index file to the router file /src/router/index.js)
 # Creating the Module
 - Create a new view file in the views folder and name it the module name and view (moduleNameView.vue) **look at testView.vue for layout example**
-- in /src/rotuer/index.js import the newly created vue file and add it as a component in the routes array **NOTE: the path should be the same as the link from the homeButtons/index.js file**
+- in /src/rotuer/index.js import the newly created vue file and add it as a component in the routes array 
+**NOTE: the path should be the same as the link from the homeButtons/index.js file**
 - under the store folder, create a new folder and name it the same as the module
 - create an index.js file for it. (this is the store module for vuex. You can use the exampleStore/index.js as a template)
 - navigate to /src/store/index.js and import the newly created index file and add it to the modules
 - in the same index file in the mutations: **openCurrentIndex** function add an if check for the new module 
 ```javascript
-    // make sure to change the your button name to what you put as the button title in the homeButtons/index.js file 
+    // make sure to change the your button name to what you put as the 
+    //button title in the homeButtons/index.js file 
     //also make sure to change the yourImportedModuleName to the correct imported module
      if (window.localStorage.getItem("name") == "Your Button Name") {
         state.currentIndexTitles.push(state.YourImportedModuleName.slideNames);
