@@ -1,6 +1,6 @@
 <template>
   <div class="buttonGroup">
-    <BaseButton v-for="btn in homeButtons"  :route="btn.link" :title="btn.title"> </BaseButton>
+    <BaseButton v-for="btn in homeButtons" :key="btn"  :route="btn.link" :title="btn.title"> </BaseButton>
   </div>
 </template>
 <script>
