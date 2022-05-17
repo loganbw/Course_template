@@ -51,6 +51,8 @@ Your Module should follow the same structure as the testView.vue folder.
           </div>
         </div>
 ```
+- import photos to /public/img
+- the base photos should be there but if the module has ones that are not in there just copy from the old one
 - create a css file in the assets folder and name it the same as the view
 
 The reasoning why we import the styles is because all of the slides are hard coded. This makes the file super long and hard to follow.
