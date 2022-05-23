@@ -12,7 +12,7 @@ const store = createStore({
   state() {
     return {
       //sets the v-if to show index module or not
-      showSlideIndex: false,
+      showSlideIndex: null,
       //set the current home slide for the index to populate
       currentSelectedHomeButton: "",
       //sets array for index titles
@@ -52,7 +52,12 @@ const store = createStore({
     },
     //This Function is hard coded, if check for what home button is being clicked.
     openCurrentIndex(state) {
-      state.showSlideIndex = !state.showSlideIndex;
+      if(state.showSlideIndex == null){
+        state.showSlideIndex = false
+      }else{
+        state.showSlideIndex = !state.showSlideIndex;
+      }
+      
       // on open we set the array back to 0
       state.currentIndexTitles = [];
       //since the button opens a new window we use localstorage to find the current pressed button

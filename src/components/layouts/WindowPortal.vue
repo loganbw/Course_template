@@ -125,8 +125,14 @@ import WindowPortalHeader from "./WindowPortalHeader.vue";
       },
       // this opens the index menu
       openIndexModule() {
+        if(this.flip == true)
+        {
+          this.flip = false
+          return;
+        }
+        store.dispatch("openCurrentIndex");
         this.$store.getters.getCurrentSelectedHomeButton;
-        this.flip = this.$store.getters.getShowSlide;
+        this.flip = true;
         this.openIndexTitles();
       },
       //this gets the index titles from the store of current module
@@ -137,7 +143,7 @@ import WindowPortalHeader from "./WindowPortalHeader.vue";
       //closes index
       closeIndexModule() {
         store.dispatch("closeCurrentIndex");
-        this.flip = this.$store.getters.getShowSlide;
+        this.flip = false;
          store.dispatch("setQuestionAnswered", true)
         store.dispatch("setIsQuestionCorrect", 'unAnswered')
       },
