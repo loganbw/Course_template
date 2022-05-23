@@ -95,14 +95,14 @@ Some Global Styles:
                         </div>
                     </Slide>
                     <Slide slideId="2">
-                    <div class="slotContain">
-                        <span class="baseTermTitle">
-                            Performing a Valuation
-                        </span>
-                            <br/>
-                        <p>
-                            
-                        </p>
+                        <div class="slotContain">
+                            <span class="baseTermTitle">
+                                Performing a Valuation
+                            </span>
+                                <br/>
+                            <p>
+                                
+                            </p>
                         </div>
                     </Slide>   
                 </SlideContainer>

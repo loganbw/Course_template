@@ -117,9 +117,6 @@ const store = createStore({
     getCurrentSelectedHomeButton(state) {
       return state.currentSelectedHomeButton;
     },
-    getTitleCount(state) {
-      return state.introductionF.titleCount;
-    },
     getIndexSlideSelected(state) {
       return state.indexOfSlide;
     },

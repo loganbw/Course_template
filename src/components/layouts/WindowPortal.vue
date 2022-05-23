@@ -125,7 +125,6 @@ import WindowPortalHeader from "./WindowPortalHeader.vue";
       },
       // this opens the index menu
       openIndexModule() {
-        store.dispatch("openCurrentIndex");
         this.$store.getters.getCurrentSelectedHomeButton;
         this.flip = this.$store.getters.getShowSlide;
         this.openIndexTitles();
@@ -133,7 +132,7 @@ import WindowPortalHeader from "./WindowPortalHeader.vue";
       //this gets the index titles from the store of current module
       openIndexTitles() {
         this.titles = this.$store.getters.getIndexTitles;
-        this.titleCount = this.$store.getters.getTitleCount;
+        this.titleCount = this.$store.getters.getTotalNumberOfSlides;
       },
       //closes index
       closeIndexModule() {
